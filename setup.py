@@ -31,7 +31,7 @@ dev_requires = [
 ] + tests_require
 
 setup(
-    name="mightier-graphene-django",
+    name="graphene-django",
     version=version,
     description="Custom fork of Graphene Django integration for Mightier",
     long_description=open("README.md").read(),

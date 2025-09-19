@@ -59,6 +59,14 @@ setup(
     keywords="api graphql protocol rest relay graphene",
     packages=find_packages(exclude=["tests", "examples", "examples.*"]),
     install_requires=[
+        # NOTE: Mightier repos use python >=3.12 so they don't have setuptools installed by default.
+        # Instead of compiling the package ahead of time and uploading to PyPI, we just install this package
+        # via git URL and allow poetry to compile package (i.e. run `setup.py`) when it installs.
+        #
+        # However since setuptools is not installed in our repos, poetry installation from git repo fails!
+        # So we need to specifically mark setuptools as required for installing our fork.
+        "setuptools>=80.9.0",
+        # TODO: remove the above line before making a PR back to the base repo.
         "graphene>=3.0,<4",
         "graphql-core>=3.1.0,<4",
         "graphql-relay>=3.1.1,<4",

@@ -1,3 +1,13 @@
+# Mightier GraphQL Django Fork
+This is a custom fork of [graphene-django](https://github.com/graphql-python/graphene-django) with specific modifications for Mightier.
+
+`mightier-release` is trunk of project that contains Mightier's custom code. 
+
+## Installation
+```bash
+pip install my-graphene-django
+
+
 # ![Graphene Logo](http://graphene-python.org/favicon.png) Graphene-Django
 
 [![build][build-image]][build-url]

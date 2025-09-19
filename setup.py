@@ -8,7 +8,7 @@ _version_re = re.compile(r"__version__\s+=\s+(.*)")
 with open("graphene_django/__init__.py", "rb") as f:
     version = str(
         ast.literal_eval(_version_re.search(f.read().decode("utf-8")).group(1))
-    )
+    ) + '-mightier'
 
 rest_framework_require = ["djangorestframework>=3.6.3"]
 
@@ -33,12 +33,12 @@ dev_requires = [
 setup(
     name="graphene-django",
     version=version,
-    description="Graphene Django integration",
+    description="Custom fork of Graphene Django integration for Mightier",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/graphql-python/graphene-django",
-    author="Syrus Akbary",
-    author_email="me@syrusakbary.com",
+    url="https://github.com/Neuromotion-Inc/graphene-django",
+    author="Kiana Hosaka",
+    author_email="kiana@mightier.com",
     license="MIT",
     classifiers=[
         "Development Status :: 5 - Production/Stable",

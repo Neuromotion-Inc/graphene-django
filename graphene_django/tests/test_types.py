@@ -135,8 +135,8 @@ def test_schema_representation():
           headline: String!
           pubDate: Date!
           pubDateTime: DateTime!
-          reporter: Reporter!
-          editor: Reporter!
+          reporter: Reporter
+          editor: Reporter
 
           \"""Language\"""
           lang: TestsArticleLangChoices!

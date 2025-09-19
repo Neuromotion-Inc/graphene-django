@@ -135,8 +135,8 @@ def test_filter_enum_field_schema_type(schema):
   headline: String!
   pubDate: Date!
   pubDateTime: DateTime!
-  reporter: ReporterType!
-  editor: ReporterType!
+  reporter: ReporterType
+  editor: ReporterType
 
   """Language"""
   lang: TestsArticleLangChoices!
